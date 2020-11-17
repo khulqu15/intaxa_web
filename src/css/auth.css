@@ -1,0 +1,199 @@
+@font-face {
+    font-family: arciform;
+    src: url(../fonts/Arciform.otf);
+}
+@font-face {
+    font-family: monserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: viga;
+    src: url(../fonts/Viga-Regular.ttf);
+}
+.monserrat {
+    font-family: monserrat;
+}
+.poppins {
+    font-family: poppins;
+}
+
+.viga{
+    font-family: viga;
+}
+
+.arciform{
+    font-family: arciform;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+    font-family: viga;
+}
+
+p, input {
+    font-family: monserrat;
+}
+
+.bold {
+    font-weight: bold;
+}
+.btn-spring-green{
+    background-color: #14EBA2;
+    border-radius: 10px;
+}
+
+.btn-white{
+    background-color:#ffffff;
+}
+.text-spring-green{
+    color: #14EBA2;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.input-search {
+    border-radius: 10px!important;
+}
+
+.game-thumbnail div{
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(to right, #20BD88 , #20BD88, #ffffff);
+}
+
+.game-thumbnail:hover img{
+    transform : scale(1.1);
+    opacity: .7;
+    overflow: hidden;
+    transition: 0.3s all;
+}
+
+.bg-gradient {
+    background: linear-gradient(to right, #20BD88 , #118A61);
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+.nav-link{
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.modal-content{
+  background-image: url(../img/background/gameModal.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  top: 40px;
+}
+
+.btn-modal {
+    border-radius: 5px; 
+    position: relative;
+    top: 35px;
+}
+
+.inputId-game{
+    letter-spacing: 25px;
+}
+
+.card-game{
+    background: transparent;
+    border: 0;
+    border-radius: 10px;
+}
+
+.img-card-game {
+    border-radius: 10px;
+    height: 200px;
+}
+
+
+.card-game-text{
+    background-image: linear-gradient(to right , rgba(0, 0, 0, .85), rgba(0, 0, 0, .7), rgb(0, 0, 0, 0));
+    border-radius: 10px;
+    height: 200px;
+}
+
+.card-game-text:hover{
+    background-image: linear-gradient(to right , rgba(20, 235, 162, 1), rgba(20, 235, 162, .5), rgb(0, 0, 0, 0));
+    border: 4px solid #14EBA2;
+    transition: .1s all;
+}
+
+.card-game-text:hover p {
+    color: white;
+    font-weight: bold;
+}
+
+.card-game-text h4 {
+    margin-top: 80px;
+}
+
+.card-game-text p {
+    margin-top: 30px;
+}
+
+footer {
+    background-image: url(../img/background/footer.png);
+    background-size: cover;
+    position: relative;
+}
+
+.copyright {
+    padding-left: 15%;
+}
+
+.copyright img {
+    width: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .footer-right h2{
+        font-size: 25px;
+    }
+
+    .hr {
+        top: 330px;
+    }
+
+    
+}
+
+.img-link-download {
+    height: 46px;
+}
+
+.navbar-footer img {
+    width: 60px;
+}
+
+.navbar-footer span {
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.navbar-footer ul li{
+    list-style: none;
+}
+
+.navbar-footer ul li a {
+    color: black;
+}
+
