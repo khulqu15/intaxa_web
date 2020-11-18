@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTAXA</title>
+    <link rel="shortcut icon" href="../src/img/logo/logo-blue.png" type="image/x-icon">
+    <link rel="stylesheet" href="../src/css/wow_book.css" type="text/css" />
+    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/all.min.css " />
+    <link rel="stylesheet" type="text/css" href="../src/css/slick.css " />
+    <link rel="stylesheet" type="text/css" href="../src/css/slick-theme.css " />
+</head>
+
+<body style="overflow-x: hidden;">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0 pt-2 fixed-top" style="z-index:auto">
+        <div class="container">
+            <a class="navbar-brand mb-0" href="#" style="position: absolute;">
+                <img src="../src/img/logo/logo-white.png" alt="">
+                <h3 class="ml-2 mt-2 d-inline-block">INTAXA</h3>
+            </a>
+            <div class="ml-auto px-4 navbar-group bg-white rounded-10 py-1">
+                <div class="p-1 px-2 rounded-10" id="setting">
+                    <img src="../src/img/icon/eva_settings-outline.png" class="img-setting" alt="">
+                </div>
+                <div class="p-1 img-layer px-2 rounded-10" style="height: 42px;">
+                    <img src="../src/img/icon/Vector.png">
+                    <img src="../src/img/icon/Vector-1.png">
+                    <img src="../src/img/icon/Vector-2.png">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="magazine">
+        <div id="book" class="position-fixed absolute-middle">
+            <div><img src="../src/img/cover/cyberpunk.jpg" alt="" class="w-100 h-100"></div>
+            <div><img src="../src/img/cover/cp1.png" class="w-100 h-100"></div>
+            <div><img src="../src/img/cover/cp2.png" class="w-100 h-100"> </div>
+            <div> This is the page 3 </div>
+            <div> This is the page 4 </div>
+            <div class="bg-white"></div>
+        </div>
+    </div>
+    <div class="w-100 d-flex justify-content-center position-absolute" style="bottom: 0px;">
+        <nav class=" toolbar-magazine">
+            <ul class="bg-white mb-2">
+                <a id='first' href="#" title='goto first page'>
+                    <li><i class="fas fa-fast-backward"></i></li>
+                </a>
+                <a id='back' href="#" title='go back one page'>
+                    <li><i class="fas fa-chevron-left"></i></li>
+                </a>
+                <a id='zoomin' href="#" title='zoom in'>
+                    <li><i class="fas fa-search-plus"></i></li>
+                </a>
+                <a id='slideshow' href="#" title='start slideshow'>
+                    <li><i id="play" class="fas fa-play"></i></li>
+                </a>
+                <a id='zoomout' href="#" title='zoom out'>
+                    <li><i class="fas fa-search-minus"></i></li>
+                </a>
+                <a id='next' href="#" title='go foward one page'>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                </a>
+                <a id='last' href="#" title='goto last page'>
+                    <li><i class="fas fa-fast-forward"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <div class="thumbnail-slide bottom position-fixed">
+        <div class="thumbnail-magazine bg-white ">
+            <div class="items">
+                <a href="#book/1" class="d-flex">
+                    <img src="../src/img/cover/cp1.png" alt="">
+                    <img src="../src/img/cover/cp2.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#book/3" class="d-flex">
+                    <img src="../src/img/cover/cp1.png" alt="">
+                    <img src="../src/img/cover/cp2.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#book/5" class="d-flex">
+                    <img src="../src/img/cover/cp1.png" alt="">
+                    <img src="../src/img/cover/cp2.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#book/7" class="d-flex">
+                    <img src="../src/img/cover/cp1.png" alt="">
+                    <img src="../src/img/cover/cp2.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#book/9" class="d-flex">
+                    <img src="../src/img/cover/cp1.png" alt="">
+                    <img src="../src/img/cover/cp2.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#book/1" class="d-flex">
+                    <img src="../src/img/cover/cp1.png" alt="">
+                    <img src="../src/img/cover/cp2.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        <div class="position-absolute overlay-left p-5"></div>
+        <div class="position-absolute overlay-right p-5"></div>
+    </div>
+    <div class="modal-content-option shadow-md rounded-10 bg-white" id="modal">
+        <div class="triangle bg-white"></div>
+        <div class="form-group px-4 row">
+            <label for="list-view" class="col-sm-5 col-form-label">List View Position</label>
+            <div class="col-sm-7 ">
+                <input type="text" class="form-control pl-3 " id="list-view" value="bottom">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group px-4 mb-0 row">
+            <label for="music-range" class="col-sm-5 col-form-label">Music Audio</label>
+            <div class="col-sm-7 ">
+                <input type="range" class="form-control-range mt-2" id="music-range">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group px-4  row">
+            <label for="text-size" class="col-sm-5 col-form-label">Text size</label>
+            <div class="col-sm-7 ">
+                <input type="text" class="form-control pl-3 " id="text-size" value="Normal">
+            </div>
+        </div>
+        <hr>
+        <div class="form-group px-4 row">
+            <label for="theme" class="col-sm-5 col-form-label">Theme Style</label>
+            <div class="col-sm-7 ">
+                <input type="text" class="form-control pl-3 " id="theme" value="light">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../src/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../src/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/js/wow_book.min.js"></script>
+    <script type="text/javascript" src="../src/js/all.min.js"></script>
+    <script type="text/javascript" src="../src/js/script.js"></script>
+    <script type="text/javascript" src="../src/js/slick.min.js"></script>
+    <script type="text/javascript">
+        magazine()
+    </script>
+</body>
+
+</html>

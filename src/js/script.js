@@ -79,3 +79,73 @@ $('.sign-in-left').click(function () {
     $('.btn-sign-up').addClass('w-100').removeClass('col-6 offset-3')
     $('.sign-up-option').addClass('pt-5')
 })
+
+
+// magazine
+
+function magazine() {
+    $(document).ready(function () {
+        $('#book').wowBook({
+            height: 500,
+            width: 700,
+            centeredWhenClosed: true,
+            controls: {
+                zoomIn: '#zoomin',
+                zoomOut: '#zoomout',
+                next: '#next',
+                back: '#back',
+                first: '#first',
+                last: '#last',
+                slideShow: '#slideshow',
+                flipSound: '#flipsound',
+                thumbnails: '#thumbs',
+                fullscreen: '#fullscreen'
+            }
+        })
+
+
+        $('.bottom .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
+        $('.bottom .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+        $('.bottom .thumbnail-magazine .slick-next').click(function () {
+            var url = ($('.slick-center a').attr('href'))
+            window.location.href = url
+        })
+        $('.slick-prev').click(function () {
+            var url = ($('.slick-center a').attr('href'))
+            window.location.href = url
+        })
+
+        $('#setting').click(function () {
+            $('#modal').toggleClass('show')
+        })
+
+        $('.magazine').click(function () {
+            $('#modal').removeClass('show')
+        })
+
+
+
+        if ($('.thumbnail-slide').hasClass('left')) {
+            $('.thumbnail-magazine').slick({
+                slidesToScroll: 1,
+                slidesToShow: 5,
+                vertical: true,
+            })
+            $('.left .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
+            $('.left .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+
+        } else {
+            $('.thumbnail-magazine').slick({
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '0',
+                slidesToShow: 5
+            })
+
+            $('.bottom .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
+            $('.bottom .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+        }
+
+    })
+
+}
