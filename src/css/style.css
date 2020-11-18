@@ -409,6 +409,93 @@
 
     /*  */
 
+      /* sign-in */
+     .sign-in-right {
+        border-radius: 20px 0 0 20px;
+        background-color: #fff;
+        justify-content: center;
+    }
+
+    .sign-in-right,
+    .sign-in-left {
+        transition: .2s ease-in-out;
+        min-height: 100vh;
+    }
+
+    .sign-in-right h3 {
+        margin-top: 8rem !important;
+        margin-bottom: 4rem;
+    }
+
+    .sign-in-qr {
+        padding: 5rem 4rem;
+        max-height: 620px;
+        transition: .3s ease-in-out;
+    }
+
+    .sign-in-qr h2 {
+        margin-top: 8rem;
+    }
+
+    @media only screen and (max-width:767px) {
+
+        .sign-in-right *,
+        .sign-in-left * {
+            transition: .2s ease-in-out;
+        }
+
+        .sign-in-right form,
+        .btn-sign-up {
+            max-width: 83.333333%;
+            margin-left: 8.333333%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .sign-in-right {
+            border-radius: 40px 40px 0 0;
+            padding: 1rem 2rem;
+        }
+
+        .sign-in-qr {
+            padding: 3rem 2rem !important;
+        }
+
+        .sign-in-qr h2 {
+            margin-top: 2rem !important;
+            font-size: 24px !important;
+        }
+
+        .sign-in-qr p {
+            font-size: 14px !important;
+        }
+
+        .sign-in-right h3 {
+            margin-top: 4rem !important;
+        }
+
+        .sign-up-option {
+            padding-top: 3rem !important;
+        }
+
+        .sign-in-right,
+        .sign-in-left {
+            min-height: 70vh;
+        }
+
+    } 
+
+    .login-left,
+    .login-right {
+        min-height: 100vh;
+    }
+
+    .login-right {
+        background: linear-gradient(153.74deg, #0D6AE3 0%, #46FFFF 99.22%);
+    }
+
+    /*  */
+
     /* magazine */
 
     .magazine {
@@ -611,7 +698,7 @@
     }
 
     .navbar-group .img-layer img {
-        transition: .4s ease-in-out;
+        transition: .2s ease-in-out;
         display: list-item;
     }
 
@@ -643,6 +730,7 @@
         position: fixed;
         z-index: 100;
         top: 0;
+        display: none;
         padding-top: 30px;
         right: 4%;
         transition: .4s all;
@@ -650,7 +738,8 @@
 
     .modal-content-option.show {
         opacity: 1;
-        margin-top: 8%;
+        display: block;
+        margin-top: 7%;
     }
 
     .triangle {
@@ -671,4 +760,14 @@
     .modal-content-option .form-group,
     .modal-content-option input {
         font-size: 14px !important;
+    }
+
+
+    @media only screen and (max-width:767px){
+
+        .modal-content-option.show {
+            display: block;
+            opacity: 1;
+            margin-top: 15%;
+        }
     }

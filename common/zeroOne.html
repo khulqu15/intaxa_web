@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero One</title>
+    <!-- icon -->
+    <link rel="shortcut icon" href="../src/img/logo/zero-one.png" type="image/x-icon">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../src/css/wow_book.css" type="text/css" />
+    <link rel="stylesheet" href="../src/css/auth.css">
+    <link rel="stylesheet" href="../src/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/all.min.css " />
+    <link rel="stylesheet" type="text/css" href="../src/css/slick.css " />
+    <link rel="stylesheet" type="text/css" href="../src/css/slick-theme.css " />
+</head>
+
+<body>
+    <div class="magazine">
+        <nav class="navbar navbar-expand-lg navbar-dark p-0 pt-2 fixed-top" style="z-index:auto">
+            <div class="container p-0">
+                <div class="ml-auto px-4 navbar-group bg-brown rounded-10 py-2" style="font-size: 20px;">
+                    <div class="p-1 px-3 d-inline-block rounded-10" id="search" data-toggle="modal" data-target="#modal-magz">
+                        <i class="fas fa-search text-white"></i>
+                    </div>
+                    <div class="p-1 px-3 d-inline-block rounded-10">
+                        <i class="fas fa-th text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="magz" class="position-fixed ">
+        <div><img src="../src/img/cover/cyberpunk.jpg" alt="" class="w-100 h-100"></div>
+        <div><img src="../src/img/cover/1 1.png" class="w-100 h-100"></div>
+        <div><img src="../src/img/cover/2 1.png" class="w-100 h-100"> </div>
+        <div> <img src="../src/img/cover/cp1.png" alt="" class="w-100 h-100"></div>
+        <div> <img src="../src/img/cover/cp2.png" alt="" class="w-100 h-100"> </div>
+        <div class="bg-white"></div>
+    </div>
+    <div class="position-fixed thumbnail-slide" style="bottom: 0;z-index: 10;">
+        <div class="thumbnail-magz">
+            <div class="items">
+                <a href="#magz/1" class="d-flex">
+                    <img src="../src/img/cover/1 1.png" alt="">
+                    <img src="../src/img/cover/2 1.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#magz/3" class="d-flex">
+                    <img src="../src/img/cover/1 1.png" alt="">
+                    <img src="../src/img/cover/2 1.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#magz/5" class="d-flex">
+                    <img src="../src/img/cover/1 1.png" alt="">
+                    <img src="../src/img/cover/2 1.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#magz/7" class="d-flex">
+                    <img src="../src/img/cover/1 1.png" alt="">
+                    <img src="../src/img/cover/2 1.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#magz/1" class="d-flex">
+                    <img src="../src/img/cover/1 1.png" alt="">
+                    <img src="../src/img/cover/2 1.png" alt="">
+                </a>
+            </div>
+            <div class="items">
+                <a href="#magz/3" class="d-flex">
+                    <img src="../src/img/cover/1 1.png" alt="">
+                    <img src="../src/img/cover/2 1.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="w-100 d-flex justify-content-center bg-brown position-absolute" style="bottom: 0px;">
+        <nav class=" toolbar-magz">
+            <ul class="mb-0">
+                <a id='zoomout' href="#" title='zoom out'>
+                    <li><i class="fas fa-search-minus"></i></li>
+                </a>
+                <a id='first' href="#" title='goto first page'>
+                    <li><i class="fas fa-fast-backward"></i></li>
+                </a>
+                <a id='back' href="#" title='go back one page'>
+                    <li><i class="fas fa-chevron-left"></i></li>
+                </a>
+                <a href="">
+                    <li class="" style="padding: 0;">
+                        <img src="../src/img/logo/zero-one.png" alt="">
+                    </li>
+                </a>
+                <a id='next' href="#" title='go foward one page'>
+                    <li><i class="fas fa-chevron-right"></i></li>
+                </a>
+                <a id='last' href="#" title='goto last page'>
+                    <li><i class="fas fa-fast-forward"></i></li>
+                </a>
+                <a id='zoomin' href="#" title='zoom in'>
+                    <li><i class="fas fa-search-plus"></i></li>
+                </a>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- modal -->
+    <div class="modal fade" id="modal-magz" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content modal-search rounded-10 p-3">
+                <input type="text" id="search" name="search" class="w-100 form-control form-control-lg" placeholder="Cari sesuatu ...">
+                <div class="w-100 d-flex mt-4" style="flex-wrap: wrap;">
+                    <div class="col-md-4 ">
+                        <div class="card-modal p-1 d-flex rounded-10">
+                            <img src="../src/img/cover/1 1.png" alt="" >
+                            <img src="../src/img/cover/2 1.png" alt="" >
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="card-modal p-1 d-flex rounded-10">
+                            <img src="../src/img/cover/1 1.png" alt="" >
+                            <img src="../src/img/cover/2 1.png" alt="" >
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="card-modal p-1 d-flex rounded-10">
+                            <img src="../src/img/cover/1 1.png" alt="" >
+                            <img src="../src/img/cover/2 1.png" alt="" >
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn col-2 mt-auto bg-brown text-white ml-auto rounded-10 py-2" data-dismiss="modal" aria-label="Close">Tutup</button>
+            </div>
+        </div>
+    </div>
+    <!-- script -->
+    <script type="text/javascript" src="../src/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="../src/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../src/js/wow_book.min.js"></script>
+    <script type="text/javascript" src="../src/js/all.min.js"></script>
+    <script type="text/javascript" src="../src/js/script.js"></script>
+    <script type="text/javascript" src="../src/js/slick.min.js"></script>
+    <script type="text/javascript">
+        magz()
+    </script>
+</body>
+
+</html>

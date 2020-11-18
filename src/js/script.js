@@ -84,68 +84,120 @@ $('.sign-in-left').click(function () {
 // magazine
 
 function magazine() {
-    $(document).ready(function () {
-        $('#book').wowBook({
-            height: 500,
-            width: 700,
-            centeredWhenClosed: true,
-            controls: {
-                zoomIn: '#zoomin',
-                zoomOut: '#zoomout',
-                next: '#next',
-                back: '#back',
-                first: '#first',
-                last: '#last',
-                slideShow: '#slideshow',
-                flipSound: '#flipsound',
-                thumbnails: '#thumbs',
-                fullscreen: '#fullscreen'
-            }
-        })
-
-
-        $('.bottom .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
-        $('.bottom .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
-        $('.bottom .thumbnail-magazine .slick-next').click(function () {
-            var url = ($('.slick-center a').attr('href'))
-            window.location.href = url
-        })
-        $('.slick-prev').click(function () {
-            var url = ($('.slick-center a').attr('href'))
-            window.location.href = url
-        })
-
-        $('#setting').click(function () {
-            $('#modal').toggleClass('show')
-        })
-
-        $('.magazine').click(function () {
-            $('#modal').removeClass('show')
-        })
-
-
-
-        if ($('.thumbnail-slide').hasClass('left')) {
-            $('.thumbnail-magazine').slick({
-                slidesToScroll: 1,
-                slidesToShow: 5,
-                vertical: true,
-            })
-            $('.left .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
-            $('.left .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
-
-        } else {
-            $('.thumbnail-magazine').slick({
-                slidesToScroll: 1,
-                centerMode: true,
-                centerPadding: '0',
-                slidesToShow: 5
-            })
-
-            $('.bottom .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
-            $('.bottom .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+    $('#book').wowBook({
+        height: 500,
+        width: 800,
+        centeredWhenClosed: true,
+        controls: {
+            zoomIn: '#zoomin',
+            zoomOut: '#zoomout',
+            next: '#next',
+            back: '#back',
+            first: '#first',
+            last: '#last',
+            slideShow: '#slideshow',
+            flipSound: '#flipsound',
+            thumbnails: '#thumbs',
+            fullscreen: '#fullscreen'
         }
-
     })
 
+
+    $('.bottom .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
+    $('.bottom .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+    $('.bottom .thumbnail-magazine .slick-next').click(function () {
+        var url = ($('.slick-center a').attr('href'))
+        window.location.href = url
+    })
+    $('.slick-prev').click(function () {
+        var url = ($('.slick-center a').attr('href'))
+        window.location.href = url
+    })
+
+    $('#setting').click(function () {
+        $('#modal').toggleClass('show')
+    })
+
+    $('.magazine').click(function () {
+        $('#modal').removeClass('show')
+    })
+
+    // $('.items').click(function () {
+    //     $('.items').removeClass('slick-center')
+    //     $(this).addClass('slick-center')
+    // })
+
+    $('#list-view').on('keypress', function (e) {
+        if (e.which == 13) {
+            var position = $('#list-view').val()
+            if (position == 'bottom') {
+                $('.thumbnail-slide').addClass('bottom').removeClass('left')
+            } else if (position == 'left') {
+                $('.thumbnail-slide').addClass('left').removeClass('bottom')
+
+            }
+        }
+    })
+
+    if ($('.thumbnail-slide').hasClass('left')) {
+        $('.thumbnail-magazine').slick({
+            slidesToScroll: 1,
+            slidesToShow: 5,
+            vertical: true,
+        })
+        $('.thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
+        $('.thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+
+    } else {
+        $('.thumbnail-magazine').slick({
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 5
+        })
+
+        $(' .thumbnail-magazine .slick-prev').html('<i class="fas fa-4x text-white fa-caret-left absolute-middle"></i>')
+        $(' .thumbnail-magazine .slick-next').html('<i class="fas fa-4x text-white fa-caret-right absolute-middle"></i>')
+    }
+
+
+}
+
+function magz() {
+    $('#magz').wowBook({
+        height: 500,
+        width: 800,
+        centeredWhenClosed: true,
+        controls: {
+            zoomIn: '#zoomin',
+            zoomOut: '#zoomout',
+            next: '#next',
+            back: '#back',
+            first: '#first',
+            last: '#last',
+            slideShow: '#slideshow',
+            flipSound: '#flipsound',
+            thumbnails: '#thumbs',
+            fullscreen: '#fullscreen'
+        }
+    })
+    if ($('.thumbnail-slide').hasClass('left')) {
+        $('.thumbnail-magz').slick({
+            slidesToScroll: 1,
+            slidesToShow: 5,
+            vertical: true,
+        })
+        $(' .thumbnail-magz .slick-prev').html('<div class="slide-control-prev bg-white rounded-pill"><i class="fas absolute-middle fa-chevron-left"></i></div>')
+        $(' .thumbnail-magz .slick-next').html('<div class="slide-control-next bg-white rounded-pill"><i class="fas absolute-middle fa-chevron-right"></i></div>')
+
+    } else {
+        $('.thumbnail-magz').slick({
+            slidesToScroll: 1,
+            centerMode: true,
+            centerPadding: '0',
+            slidesToShow: 5
+        })
+        $(' .thumbnail-magz .slick-prev').html('<div class="slide-control-prev bg-white rounded-pill"><i class="fas absolute-middle fa-chevron-left"></i></div>')
+        $(' .thumbnail-magz .slick-next').html('<div class="slide-control-next bg-white rounded-pill"><i class="fas absolute-middle fa-chevron-right"></i></div>')
+    }
 }
