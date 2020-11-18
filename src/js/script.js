@@ -122,22 +122,6 @@ function magazine() {
         $('#modal').removeClass('show')
     })
 
-    // $('.items').click(function () {
-    //     $('.items').removeClass('slick-center')
-    //     $(this).addClass('slick-center')
-    // })
-
-    $('#list-view').on('keypress', function (e) {
-        if (e.which == 13) {
-            var position = $('#list-view').val()
-            if (position == 'bottom') {
-                $('.thumbnail-slide').addClass('bottom').removeClass('left')
-            } else if (position == 'left') {
-                $('.thumbnail-slide').addClass('left').removeClass('bottom')
-
-            }
-        }
-    })
 
     if ($('.thumbnail-slide').hasClass('left')) {
         $('.thumbnail-magazine').slick({
